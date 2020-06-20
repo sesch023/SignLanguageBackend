@@ -1,15 +1,15 @@
 from config import Config
 from tensorflow.keras.models import load_model
-from tensorflow.keras.backend import backend
-import keras
 import glob
 import os
 from flask import Flask
 from flask_cors import CORS
+from flask_restful import Api
 
 os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
 app = Flask(__name__)
 CORS(app)
+api = Api(app)
 app.config.from_object(Config)
 
 app.config["MODELS"] = {}
@@ -31,4 +31,4 @@ for model in glob.glob(app.config["MODEL_FOLDER_PATH"] + "*.hdf5"):
                 app.config["MODELS"][os.path.basename(model)]["CLASSES"].append(line)
 
 
-from SignLanguageBackend import routes
+from SignLanguageBackend import services

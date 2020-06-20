@@ -5,3 +5,4 @@ scikit-learn>=0.23.1
 pillow>=7.1.2
 werkzeug
 flask-cors>=3.0.8
+flask-restful>=0.3.8

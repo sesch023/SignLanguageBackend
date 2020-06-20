@@ -1,0 +1,6 @@
+tf-nightly>=2.3.0.dev20200613
+keras>=2.3.1
+flask>=1.1.2
+Flask-API>=2.0
+scikit-learn>=0.23.1
+pillow>=7.1.2

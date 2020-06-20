@@ -15,8 +15,8 @@ model_map = {
 @cross_origin()
 def cnn_5_150_150():
     try:
-        print(request.stream)
-        image = request.files['image'].stream
+        print(request.stream['image'])
+        image = request.stream['image'].stream
         image_pil = Image.open(image).resize((150, 150)).convert("L")
         image_tf = img_to_array(image_pil).reshape((1, 150, 150, 1))
         prediction = model_map[request.path]["MODEL"].predict(image_tf).tolist()

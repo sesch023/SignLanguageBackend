@@ -1,6 +1,5 @@
 from SignLanguageBackend import app
 from flask import request
-from flask_api import status
 from tensorflow.keras.preprocessing.image import img_to_array
 import tensorflow as tf
 import traceback
@@ -28,7 +27,7 @@ def cnn_5_150_150():
             else:
                 prediction_dict[class_prediction_index] = prediction[0][class_prediction_index]
 
-        return prediction_dict, status.HTTP_200_OK
+        return prediction_dict, 200
     except Exception as err:
         print(traceback.format_exc())
-        return "BAD_REQUEST", status.HTTP_400_BAD_REQUEST
+        return "BAD_REQUEST", 400

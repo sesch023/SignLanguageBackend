@@ -4,10 +4,10 @@ from tensorflow.keras.backend import backend
 import keras
 import glob
 import os
-from flask_api import FlaskAPI
+from flask import Flask
 
 os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
-app = FlaskAPI(__name__)
+app = Flask(__name__)
 app.config.from_object(Config)
 
 app.config["MODELS"] = {}

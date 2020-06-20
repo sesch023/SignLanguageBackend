@@ -10,7 +10,7 @@ model_map = {
 }
 
 
-@app.route('/api/cnn_5_150_150', methods=["POST"])
+@app.route('/api/cnn_5_150_150', methods=["GET"])
 def cnn_5_150_150():
     try:
         image = request.files.get('image', '')

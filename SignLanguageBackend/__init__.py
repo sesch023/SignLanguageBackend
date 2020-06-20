@@ -5,9 +5,11 @@ import keras
 import glob
 import os
 from flask import Flask
+from flask_cors import CORS
 
 os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
 app = Flask(__name__)
+CORS(app)
 app.config.from_object(Config)
 
 app.config["MODELS"] = {}

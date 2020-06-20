@@ -4,3 +4,4 @@ flask>=1.1.2
 Flask-API>=2.0
 scikit-learn>=0.23.1
 pillow>=7.1.2
+werkzeug

@@ -13,6 +13,7 @@ model_map = {
 @app.route('/api/cnn_5_150_150', methods=["GET", "POST"])
 def cnn_5_150_150():
     try:
+        print(request.data)
         print(request.args)
         print(request.files)
         image = request.files['image'].stream

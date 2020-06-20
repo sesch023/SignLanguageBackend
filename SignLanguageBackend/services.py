@@ -33,8 +33,9 @@ class SignLanguageCNN(Resource):
                     prediction_dict[class_prediction_index] = prediction[0][class_prediction_index]
 
             return prediction_dict, 200
-        except Exception as err:
-            return traceback.format_exc(), 400
+        except Exception:
+            print(traceback.format_exc())
+            return "BAD REQUEST", 400
 
 
 api.add_resource(SignLanguageCNN, "/cnn_5_150_150",

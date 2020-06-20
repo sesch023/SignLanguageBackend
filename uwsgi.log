@@ -6495,3 +6495,4 @@ This message will be only logged once.
 [pid: 350500|app: 0|req: 1/1] 94.114.65.237 () {40 vars in 632 bytes} [Sat Jun 20 17:53:19 2020] POST /sign-language/cnn_5_150_150 => generated 835 bytes in 4641 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
 [pid: 350500|app: 0|req: 2/2] 94.114.65.237 () {40 vars in 632 bytes} [Sat Jun 20 17:53:36 2020] POST /sign-language/cnn_5_150_150 => generated 835 bytes in 69 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
 [pid: 350500|app: 0|req: 3/3] 94.114.65.237 () {40 vars in 632 bytes} [Sat Jun 20 17:53:38 2020] POST /sign-language/cnn_5_150_150 => generated 835 bytes in 61 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 350500|app: 0|req: 4/4] 94.114.65.237 () {38 vars in 481 bytes} [Sat Jun 20 17:57:49 2020] GET /sign-language/cnn_5_150_150 => generated 64 bytes in 1 msecs (HTTP/1.1 405) 3 headers in 109 bytes (1 switches on core 0)

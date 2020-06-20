@@ -48,6 +48,7 @@ class SignLanguageCNN(Resource):
             parser = reqparse.RequestParser()
             parser.add_argument("image", type=datastructures.FileStorage, location='files')
             args = parser.parse_args()
+            print(args)
             image = args.image
             image_pil = Image.open(image).resize(self.target_shape).convert("L")
             image_tf = img_to_array(image_pil).reshape((1, 150, 150, 1))

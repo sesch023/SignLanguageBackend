@@ -11,7 +11,7 @@ model_map = {
 }
 
 
-@app.route('/api/cnn_5_150_150', methods=["GET"])
+@app.route('/api/cnn_5_150_150', methods=["POST"])
 def cnn_5_150_150():
     try:
         print(request.files.getlist())

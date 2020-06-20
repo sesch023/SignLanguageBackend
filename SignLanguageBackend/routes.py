@@ -4,7 +4,6 @@ from tensorflow.keras.preprocessing.image import img_to_array
 import tensorflow as tf
 import traceback
 from PIL import Image
-from flask_cors import cross_origin
 
 model_map = {
     '/api/cnn_5_150_150': app.config["MODELS"]["150x150_5_Layer_CNN.hdf5"]
@@ -12,10 +11,11 @@ model_map = {
 
 
 @app.route('/api/cnn_5_150_150', methods=["GET", "POST"])
-@cross_origin()
 def cnn_5_150_150():
     try:
-        image = request.stream
+        print(request.args)
+        print(request.files)
+        image = request.files['image'].stream
         image_pil = Image.open(image).resize((150, 150)).convert("L")
         image_tf = img_to_array(image_pil).reshape((1, 150, 150, 1))
         prediction = model_map[request.path]["MODEL"].predict(image_tf).tolist()

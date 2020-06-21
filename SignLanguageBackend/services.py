@@ -6,6 +6,8 @@ from PIL import Image
 from flask_restful import Resource, reqparse
 from flask import request
 from SignLanguageBackend import api
+import base64
+from io import BytesIO
 
 
 class SignLanguageCNN(Resource):
@@ -17,8 +19,14 @@ class SignLanguageCNN(Resource):
         try:
             parser = reqparse.RequestParser()
             parser.add_argument("image", type=datastructures.FileStorage, location='files')
+            parser.add_argument("image_base_64")
             args = parser.parse_args()
-            image = args.image
+
+            if args.image:
+                image = args.image
+            else:
+                image = BytesIO(base64.b64decode(args.image_base_64))
+
             image_pil = Image.open(image).resize(self.target_shape).convert("L")
             image_tf = img_to_array(image_pil).reshape((1, 150, 150, 1))
             prediction = self.model_config["MODEL"].predict(image_tf).tolist()

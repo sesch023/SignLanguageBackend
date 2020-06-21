@@ -6496,3 +6496,231 @@ This message will be only logged once.
 [pid: 350500|app: 0|req: 2/2] 94.114.65.237 () {40 vars in 632 bytes} [Sat Jun 20 17:53:36 2020] POST /sign-language/cnn_5_150_150 => generated 835 bytes in 69 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
 [pid: 350500|app: 0|req: 3/3] 94.114.65.237 () {40 vars in 632 bytes} [Sat Jun 20 17:53:38 2020] POST /sign-language/cnn_5_150_150 => generated 835 bytes in 61 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
 [pid: 350500|app: 0|req: 4/4] 94.114.65.237 () {38 vars in 481 bytes} [Sat Jun 20 17:57:49 2020] GET /sign-language/cnn_5_150_150 => generated 64 bytes in 1 msecs (HTTP/1.1 405) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 350500|app: 0|req: 5/5] 94.114.65.237 () {42 vars in 664 bytes} [Sat Jun 20 18:02:43 2020] POST /sign-language/cnn_5_150_150 => generated 827 bytes in 65 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 350500|app: 0|req: 6/6] 94.114.65.237 () {40 vars in 511 bytes} [Sat Jun 20 18:02:50 2020] POST /sign-language/cnn_5_150_150 => generated 694 bytes in 4 msecs (HTTP/1.1 400) 2 headers in 81 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+!!! uWSGI process 350500 got Segmentation Fault !!!
+free(): corrupted unsorted chunks
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket sign_language.sock removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Jun 20 18:03:00 2020] ***
+compiled with version: 9.3.0 on 09 April 2020 09:11:51
+os: Linux-5.4.0-4-amd64 #1 SMP Debian 5.4.19-1 (2020-02-13)
+nodename: jupiter
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 80
+current working directory: /home/sebastian/SignLanguageBackend/SignLanguageBackend
+detected binary path: /home/sebastian/.pyenv/versions/3.7.6/envs/tensorflow_two/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 767404
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address sign_language.sock fd 3
+Python version: 3.7.6 (default, Apr  9 2020, 11:02:14)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/sebastian/.pyenv/versions/tensorflow_two
+Set PythonHome to /home/sebastian/.pyenv/versions/tensorflow_two
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5636592cf150
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 351389)
+spawned uWSGI worker 1 (pid: 351406, cores: 1)
+2020-06-20 18:03:00.958991: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+Loading Model: models/150x150_4_Layer_CNN.hdf5
+2020-06-20 18:03:01.722544: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2020-06-20 18:03:01.725741: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:5e:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-06-20 18:03:01.725762: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-06-20 18:03:01.727267: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-06-20 18:03:01.728891: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2020-06-20 18:03:01.729101: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2020-06-20 18:03:01.730520: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2020-06-20 18:03:01.731345: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2020-06-20 18:03:01.734581: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-06-20 18:03:01.735807: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2020-06-20 18:03:01.736012: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-06-20 18:03:01.771591: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2100000000 Hz
+2020-06-20 18:03:01.786483: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56365c9a8660 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-06-20 18:03:01.786538: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-06-20 18:03:02.084239: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56365ca149a0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-06-20 18:03:02.084309: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2020-06-20 18:03:02.087264: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:5e:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-06-20 18:03:02.087334: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-06-20 18:03:02.087376: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-06-20 18:03:02.087406: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2020-06-20 18:03:02.087434: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2020-06-20 18:03:02.087462: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2020-06-20 18:03:02.087490: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2020-06-20 18:03:02.087519: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-06-20 18:03:02.092127: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2020-06-20 18:03:02.092181: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-06-20 18:03:02.529848: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-06-20 18:03:02.529882: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2020-06-20 18:03:02.529890: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2020-06-20 18:03:02.531176: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2020-06-20 18:03:02.531206: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 13872 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:5e:00.0, compute capability: 7.5)
+Loading Model: models/150x150_5_Layer_CNN.hdf5
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x5636592cf150 pid: 351406 (default app)
+Traceback (most recent call last):
+  File "/home/sebastian/.pyenv/versions/tensorflow_two/lib/python3.7/site-packages/PIL/Image.py", line 2847, in open
+    fp.seek(0)
+AttributeError: 'NoneType' object has no attribute 'seek'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 22, in post
+    image_pil = Image.open(image).resize(self.target_shape).convert("L")
+  File "/home/sebastian/.pyenv/versions/tensorflow_two/lib/python3.7/site-packages/PIL/Image.py", line 2849, in open
+    fp = io.BytesIO(fp.read())
+AttributeError: 'NoneType' object has no attribute 'read'
+
+[pid: 351406|app: 0|req: 1/1] 94.114.65.237 () {40 vars in 511 bytes} [Sat Jun 20 18:03:04 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 4 msecs (HTTP/1.1 400) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 351406|app: 0|req: 2/2] 94.114.65.237 () {44 vars in 773 bytes} [Sat Jun 20 18:03:54 2020] GET /sign-language/cnn_5_150_150 => generated 64 bytes in 1 msecs (HTTP/1.1 405) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 351406|app: 0|req: 3/3] 94.114.65.237 () {44 vars in 773 bytes} [Sat Jun 20 19:55:36 2020] GET /sign-language/cnn_5_150_150 => generated 64 bytes in 2 msecs (HTTP/1.1 405) 3 headers in 109 bytes (1 switches on core 0)
+2020-06-20 23:25:15.508000: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-06-20 23:25:15.710496: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-06-20 23:25:16.646371: W tensorflow/stream_executor/gpu/asm_compiler.cc:81] Running ptxas --version returned 256
+2020-06-20 23:25:16.682206: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+[pid: 351406|app: 0|req: 4/4] 94.114.65.237 () {40 vars in 632 bytes} [Sat Jun 20 23:25:15 2020] POST /sign-language/cnn_5_150_150 => generated 835 bytes in 4520 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 351406|app: 0|req: 5/5] 94.114.65.237 () {40 vars in 632 bytes} [Sat Jun 20 23:25:23 2020] POST /sign-language/cnn_5_150_150 => generated 835 bytes in 68 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 351406|app: 0|req: 6/6] 94.114.65.237 () {40 vars in 632 bytes} [Sat Jun 20 23:25:24 2020] POST /sign-language/cnn_5_150_150 => generated 835 bytes in 60 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+!!! uWSGI process 351406 got Floating Point Exception !!!
+*** backtrace of 351406 ***
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(uwsgi_backtrace+0x2a) [0x5636585aed2a]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(uwsgi_fpe+0x23) [0x5636585af143]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3b7e0) [0x7f056cf517e0]
+/home/sebastian/.pyenv/versions/tensorflow_two/lib/python3.7/site-packages/tensorflow/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow5eager12GradientTapeI7_objectSt8functionIFPS2_S4_RKSt6vectorIxSaIxEEEE12PyTapeTensorE11DeleteTraceEx+0x27) [0x7f04ad36d0d7]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x14561e) [0x56365861161e]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x15c255) [0x563658628255]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x17d705) [0x563658649705]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x15c255) [0x563658628255]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x17d705) [0x563658649705]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x17b5bf) [0x5636586475bf]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x15c255) [0x563658628255]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x17d705) [0x563658649705]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x15c255) [0x563658628255]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x17d705) [0x563658649705]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x15c255) [0x563658628255]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x17d705) [0x563658649705]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x15c255) [0x563658628255]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x17f779) [0x56365864b779]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x23525c) [0x56365870125c]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(_PyGC_CollectIfEnabled+0x6d) [0x56365870208d]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x207c6d) [0x5636586d3c6d]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(uwsgi_plugins_atexit+0x71) [0x5636585ad1f1]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3de27) [0x7f056cf53e27]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3dfda) [0x7f056cf53fda]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x9a06f) [0x56365856606f]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(end_me+0x25) [0x5636585abf05]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x14110) [0x7f056d792110]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(end_me+0) [0x5636585abee0]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x14110) [0x7f056d792110]
+/lib/x86_64-linux-gnu/libc.so.6(epoll_wait+0x56) [0x7f056d013616]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(event_queue_wait+0x25) [0x5636585a28c5]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(wsgi_req_accept+0x10a) [0x56365856398a]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(simple_loop_run+0xb6) [0x5636585aae66]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(simple_loop+0x10) [0x5636585aac80]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(uwsgi_ignition+0x284) [0x5636585af424]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(uwsgi_worker_run+0x25e) [0x5636585b3a5e]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(uwsgi_run+0x434) [0x5636585b3fb4]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x8d64e) [0x56365855964e]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xeb) [0x7f056cf3ce0b]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(_start+0x2a) [0x563658562eba]
+*** end of backtrace ***
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket sign_language.sock removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Jun 21 12:16:16 2020] ***
+compiled with version: 9.3.0 on 09 April 2020 09:11:51
+os: Linux-5.4.0-4-amd64 #1 SMP Debian 5.4.19-1 (2020-02-13)
+nodename: jupiter
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 80
+current working directory: /home/sebastian/SignLanguageBackend/SignLanguageBackend
+detected binary path: /home/sebastian/.pyenv/versions/3.7.6/envs/tensorflow_two/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 767404
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address sign_language.sock fd 3
+Python version: 3.7.6 (default, Apr  9 2020, 11:02:14)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/sebastian/.pyenv/versions/tensorflow_two
+Set PythonHome to /home/sebastian/.pyenv/versions/tensorflow_two
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5593005de150
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 369181)
+spawned uWSGI worker 1 (pid: 369195, cores: 1)
+2020-06-21 12:16:16.728077: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+Loading Model: models/150x150_4_Layer_CNN.hdf5
+2020-06-21 12:16:17.501321: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2020-06-21 12:16:17.504694: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:5e:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-06-21 12:16:17.504716: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-06-21 12:16:17.506166: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-06-21 12:16:17.507435: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2020-06-21 12:16:17.507641: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2020-06-21 12:16:17.509005: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2020-06-21 12:16:17.509823: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2020-06-21 12:16:17.512941: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-06-21 12:16:17.514175: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2020-06-21 12:16:17.514393: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-06-21 12:16:17.555554: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2100000000 Hz
+2020-06-21 12:16:17.569666: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x559303cb7330 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-06-21 12:16:17.569698: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-06-21 12:16:17.874147: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x559303d23670 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-06-21 12:16:17.874224: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2020-06-21 12:16:17.877237: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:5e:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-06-21 12:16:17.877307: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-06-21 12:16:17.877351: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-06-21 12:16:17.877380: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2020-06-21 12:16:17.877409: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2020-06-21 12:16:17.877436: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2020-06-21 12:16:17.877464: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2020-06-21 12:16:17.877493: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-06-21 12:16:17.881998: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2020-06-21 12:16:17.882052: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-06-21 12:16:18.333227: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-06-21 12:16:18.333285: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2020-06-21 12:16:18.333292: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2020-06-21 12:16:18.334730: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2020-06-21 12:16:18.334774: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 13872 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:5e:00.0, compute capability: 7.5)
+Loading Model: models/150x150_5_Layer_CNN.hdf5
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x5593005de150 pid: 369195 (default app)
+2020-06-21 12:16:35.222882: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-06-21 12:16:35.427259: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-06-21 12:16:36.366398: W tensorflow/stream_executor/gpu/asm_compiler.cc:81] Running ptxas --version returned 256
+2020-06-21 12:16:36.406841: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+[pid: 369195|app: 0|req: 1/1] 94.114.65.237 () {42 vars in 664 bytes} [Sun Jun 21 12:16:35 2020] POST /sign-language/cnn_5_150_150 => generated 827 bytes in 4573 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 369195|app: 0|req: 2/2] 94.114.65.237 () {42 vars in 664 bytes} [Sun Jun 21 12:24:26 2020] POST /sign-language/cnn_5_150_150 => generated 827 bytes in 66 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 369195|app: 0|req: 3/3] 94.114.65.237 () {42 vars in 606 bytes} [Sun Jun 21 12:25:34 2020] POST /sign-language/cnn_5_150_150 => generated 827 bytes in 66 msecs (HTTP/1.1 200) 2 headers in 72 bytes (1 switches on core 0)

@@ -8,6 +8,6 @@ files = [
 ]
 headers = {}
 
-response = requests.request("POST", url, headers=headers, data = payload, files = files)
+response = requests.post(url, headers=headers, data=payload, files=files)
 
 print(response.text.encode('utf8'))

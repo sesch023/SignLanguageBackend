@@ -8,6 +8,7 @@ from flask_restful import Api
 
 os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
 app = Flask(__name__)
+cors = CORS(app, resources={r"/*": {"origins": "*"}})
 api = Api(app)
 app.config.from_object(Config)
 

@@ -6817,3 +6817,863 @@ Relying on driver to perform ptx compilation.
 Modify $PATH to customize ptxas location.
 This message will be only logged once.
 [pid: 375094|app: 0|req: 1/1] 94.114.65.237 () {42 vars in 606 bytes} [Sun Jun 21 19:30:09 2020] POST /sign-language/cnn_5_150_150 => generated 827 bytes in 4701 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 2/2] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 19:58:39 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 2 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 3/3] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 19:58:39 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 3 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 4/4] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 19:58:43 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 5/5] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 19:58:43 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 6/6] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 19:58:45 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 7/7] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 19:58:45 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 8/8] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 19:58:48 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 9/9] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 19:58:48 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 10/10] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 19:58:52 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 11/11] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 19:58:52 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 12/12] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 19:58:54 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 13/13] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 19:58:54 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 14/14] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 19:58:57 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 15/15] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 19:58:57 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 16/16] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 19:59:48 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 17/17] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 19:59:48 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 18/18] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 19:59:50 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 19/19] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 19:59:50 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 20/20] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 19:59:53 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 21/21] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 19:59:53 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 22/22] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 19:59:56 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 23/23] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 19:59:56 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 24/24] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 19:59:57 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 25/25] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 19:59:57 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 26/26] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 19:59:59 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 27/27] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 19:59:59 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 28/28] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:00:01 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 29/29] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 20:00:01 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 30/30] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:00:03 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 31/31] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 20:00:03 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 32/32] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:00:05 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 33/33] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 20:00:05 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 34/34] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:00:07 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 35/35] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 20:00:07 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 36/36] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:00:09 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 37/37] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 20:00:09 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 38/38] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:00:11 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 39/39] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 20:00:11 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 40/40] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:02:41 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 80, in b64decode
+    s = _bytes_from_decode_data(s)
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 46, in _bytes_from_decode_data
+    "string, not %r" % s.__class__.__name__) from None
+TypeError: argument should be a bytes-like object or ASCII string, not 'NoneType'
+
+[pid: 375094|app: 0|req: 41/41] 185.55.75.23 () {60 vars in 1001 bytes} [Sun Jun 21 20:02:41 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 42/42] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:02:44 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 43/43] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:02:44 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 44/44] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:02:47 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 45/45] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:02:47 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 46/46] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:02:50 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 47/47] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:02:50 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 48/48] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:02:53 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 49/49] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:02:53 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 50/50] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:02:55 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 51/51] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:02:55 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 52/52] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:02:58 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 53/53] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:02:58 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 54/54] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:03:00 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 55/55] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:03:00 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 56/56] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:03:02 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 57/57] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:03:02 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 58/58] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:05:29 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 59/59] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:05:29 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 60/60] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:05:32 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 61/61] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:05:32 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 62/62] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:05:34 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 63/63] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:05:34 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 64/64] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:05:37 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 65/65] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:05:37 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 66/66] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:05:40 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 67/67] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:05:40 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 68/68] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:05:43 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 69/69] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:05:43 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 70/70] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:05:45 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 71/71] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:05:45 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 72/72] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:05:48 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 73/73] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:05:48 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 74/74] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:05:50 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 75/75] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:05:50 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 76/76] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:05:53 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 77/77] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:05:53 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 78/78] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:06:23 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 79/79] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:06:23 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 80/80] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:06:26 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 81/81] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:06:26 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 82/82] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:06:29 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 83/83] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:06:29 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 84/84] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:06:31 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "./SignLanguageBackend/services.py", line 28, in post
+    image = BytesIO(base64.b64decode(args.image_base_64))
+  File "/home/sebastian/.pyenv/versions/3.7.6/lib/python3.7/base64.py", line 87, in b64decode
+    return binascii.a2b_base64(s)
+binascii.Error: Incorrect padding
+
+[pid: 375094|app: 0|req: 85/85] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:06:31 2020] POST /sign-language/cnn_5_150_150 => generated 14 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 146 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 86/86] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:07:18 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 87/87] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:07:18 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 45 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 88/88] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:07:21 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 89/89] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:07:21 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 43 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 90/90] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:07:23 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 91/91] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:07:23 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 92/92] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:07:25 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 93/93] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:07:25 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 94/94] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:07:28 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 95/95] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:07:28 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 46 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 96/96] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:07:30 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 97/97] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:07:30 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 98/98] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:07:33 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 99/99] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:07:33 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 100/100] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:07:36 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 101/101] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:07:36 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 102/102] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:07:38 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 103/103] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:07:39 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 40 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 104/104] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:07:41 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 105/105] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:07:41 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 43 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 106/106] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:07:43 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 107/107] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:07:43 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 43 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 108/108] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:07:46 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 109/109] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:07:46 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 110/110] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:20:05 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 111/111] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:20:05 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 43 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 112/112] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:20:07 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 113/113] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:20:07 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 45 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 114/114] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:20:10 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 115/115] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:20:10 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 43 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 116/116] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:20:13 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 117/117] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:20:13 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 118/118] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:20:16 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 119/119] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:20:16 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 120/120] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:20:19 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 121/121] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:20:19 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 43 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 122/122] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:20:21 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 123/123] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:20:21 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 124/124] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:20:24 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 125/125] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:20:24 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 126/126] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:20:27 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 127/127] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:20:27 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 128/128] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:20:30 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 129/129] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:20:30 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 130/130] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:20:33 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 131/131] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:20:33 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 47 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 132/132] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:20:36 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 133/133] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:20:36 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 134/134] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:42:40 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 135/135] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:42:40 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 45 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 136/136] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:42:41 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 137/137] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:42:41 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 40 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 138/138] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:42:42 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 139/139] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:42:42 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 140/140] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:42:43 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 141/141] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:42:43 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 40 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 142/142] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:42:45 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 143/143] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:42:45 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 144/144] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:42:48 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 145/145] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:42:48 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 45 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 146/146] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:42:50 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 147/147] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:42:50 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 148/148] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:42:51 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 149/149] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:42:51 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 49 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 150/150] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:42:53 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 151/151] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:42:53 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 98 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 152/152] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:42:54 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 153/153] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:42:54 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 154/154] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:42:56 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 155/155] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:42:56 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 156/156] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:42:58 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 157/157] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:42:58 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 43 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 158/158] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:43:00 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 159/159] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:43:00 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 160/160] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:43:42 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 161/161] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:43:42 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 162/162] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:43:44 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 163/163] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:43:44 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 164/164] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:43:46 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 165/165] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:43:46 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 40 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 166/166] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:43:47 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 167/167] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:43:47 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 40 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 168/168] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:43:48 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 169/169] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:43:48 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 48 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 170/170] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:43:50 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 171/171] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:43:50 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 172/172] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:43:52 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 173/173] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:43:52 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 174/174] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:43:53 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 175/175] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:43:53 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 176/176] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:43:54 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 177/177] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:43:54 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 178/178] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:43:56 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 179/179] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:43:56 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 43 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 180/180] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:43:57 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 181/181] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:43:57 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 182/182] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:43:59 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 183/183] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:43:59 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 184/184] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:44:33 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 185/185] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:44:33 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 43 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 186/186] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:44:36 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 187/187] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:44:36 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 48 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 188/188] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:44:37 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 189/189] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:44:37 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 190/190] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:44:39 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 191/191] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:44:39 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 192/192] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:44:41 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 193/193] 185.55.75.23 () {60 vars in 1011 bytes} [Sun Jun 21 20:44:41 2020] POST /sign-language/cnn_5_150_150 => generated 818 bytes in 50 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 194/194] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:44:43 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 195/195] 185.55.75.23 () {60 vars in 1011 bytes} [Sun Jun 21 20:44:43 2020] POST /sign-language/cnn_5_150_150 => generated 825 bytes in 58 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 196/196] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:44:44 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 197/197] 185.55.75.23 () {60 vars in 1011 bytes} [Sun Jun 21 20:44:44 2020] POST /sign-language/cnn_5_150_150 => generated 826 bytes in 52 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 198/198] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:44:46 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 199/199] 185.55.75.23 () {60 vars in 1011 bytes} [Sun Jun 21 20:44:46 2020] POST /sign-language/cnn_5_150_150 => generated 826 bytes in 51 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 200/200] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:45:22 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 201/201] 185.55.75.23 () {60 vars in 1011 bytes} [Sun Jun 21 20:45:22 2020] POST /sign-language/cnn_5_150_150 => generated 828 bytes in 56 msecs (HTTP/1.1 200) 4 headers in 138 bytes (3 switches on core 0)
+[pid: 375094|app: 0|req: 202/202] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:45:23 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 203/203] 185.55.75.23 () {60 vars in 1011 bytes} [Sun Jun 21 20:45:23 2020] POST /sign-language/cnn_5_150_150 => generated 827 bytes in 52 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 204/204] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:45:24 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 205/205] 185.55.75.23 () {60 vars in 1011 bytes} [Sun Jun 21 20:45:24 2020] POST /sign-language/cnn_5_150_150 => generated 827 bytes in 51 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 206/206] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:45:26 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 207/207] 185.55.75.23 () {60 vars in 1011 bytes} [Sun Jun 21 20:45:26 2020] POST /sign-language/cnn_5_150_150 => generated 826 bytes in 75 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 208/208] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:47:28 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 209/209] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:47:28 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 45 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 210/210] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:47:31 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 211/211] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:47:31 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 57 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 212/212] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:47:32 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 213/213] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:47:32 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 45 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 214/214] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:48:33 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 215/215] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:48:33 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 45 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 216/216] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:48:35 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 217/217] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:48:35 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 45 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 218/218] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:54:29 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 219/219] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:54:29 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 45 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 220/220] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:54:31 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 221/221] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:54:31 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 45 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 222/222] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:54:34 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 223/223] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:54:34 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 45 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 224/224] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:54:37 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 225/225] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:54:37 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 51 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 226/226] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:54:39 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 227/227] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:54:39 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 46 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 228/228] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:54:42 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 229/229] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:54:42 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 45 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 230/230] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:54:44 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 231/231] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:54:44 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 232/232] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:54:47 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 233/233] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:54:47 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 46 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 234/234] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:54:50 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 235/235] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:54:50 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 46 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 236/236] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:54:52 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 237/237] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:54:52 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 47 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 238/238] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:54:55 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 239/239] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:54:55 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 46 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 240/240] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:54:57 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 241/241] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:54:57 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 46 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 242/242] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:57:27 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 243/243] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:57:27 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 54 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 244/244] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:57:31 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 245/245] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:57:31 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 47 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 246/246] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:57:34 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 247/247] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:57:34 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 248/248] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:57:36 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 249/249] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 20:57:36 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 250/250] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:57:39 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 251/251] 185.55.75.23 () {60 vars in 1011 bytes} [Sun Jun 21 20:57:39 2020] POST /sign-language/cnn_5_150_150 => generated 824 bytes in 67 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 252/252] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:57:42 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 253/253] 185.55.75.23 () {60 vars in 1011 bytes} [Sun Jun 21 20:57:42 2020] POST /sign-language/cnn_5_150_150 => generated 813 bytes in 65 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 254/254] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:57:45 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 255/255] 185.55.75.23 () {60 vars in 1011 bytes} [Sun Jun 21 20:57:45 2020] POST /sign-language/cnn_5_150_150 => generated 820 bytes in 73 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 256/256] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:57:48 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 257/257] 185.55.75.23 () {60 vars in 1011 bytes} [Sun Jun 21 20:57:48 2020] POST /sign-language/cnn_5_150_150 => generated 823 bytes in 69 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 258/258] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:57:51 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 259/259] 185.55.75.23 () {60 vars in 1011 bytes} [Sun Jun 21 20:57:51 2020] POST /sign-language/cnn_5_150_150 => generated 826 bytes in 64 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 260/260] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:57:54 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 261/261] 185.55.75.23 () {60 vars in 1011 bytes} [Sun Jun 21 20:57:54 2020] POST /sign-language/cnn_5_150_150 => generated 831 bytes in 69 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 262/262] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 20:57:56 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 263/263] 185.55.75.23 () {60 vars in 1011 bytes} [Sun Jun 21 20:57:56 2020] POST /sign-language/cnn_5_150_150 => generated 822 bytes in 63 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 264/264] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 21:08:36 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 265/265] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 21:08:36 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 266/266] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 21:08:38 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 267/267] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 21:08:38 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 45 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 268/268] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 21:08:41 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 269/269] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 21:08:41 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 270/270] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 21:08:43 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 271/271] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 21:08:43 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 43 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 272/272] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 21:08:46 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 273/273] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 21:08:46 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 274/274] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 21:08:48 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 275/275] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 21:08:48 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 276/276] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 21:08:51 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 277/277] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 21:08:51 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 278/278] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 21:08:54 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 279/279] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 21:08:54 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 43 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 280/280] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 21:08:56 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 281/281] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 21:08:56 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 47 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 282/282] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 21:08:59 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 283/283] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 21:08:59 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 46 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 284/284] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 21:09:51 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 285/285] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 21:09:51 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 286/286] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 21:09:53 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 287/287] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 21:09:54 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 288/288] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 21:09:56 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 289/289] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 21:09:56 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 46 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 290/290] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 21:09:58 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 291/291] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 21:09:58 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 43 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 292/292] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 21:10:01 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 293/293] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 21:10:01 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 294/294] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 21:10:03 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 295/295] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 21:10:03 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 296/296] 185.55.75.23 () {58 vars in 976 bytes} [Sun Jun 21 21:10:06 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 297/297] 185.55.75.23 () {60 vars in 1007 bytes} [Sun Jun 21 21:10:06 2020] POST /sign-language/cnn_5_150_150 => generated 792 bytes in 43 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 375094|app: 0|req: 298/298] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 09:34:14 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 299/299] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 09:34:14 2020] POST /sign-language/cnn_5_150_150 => generated 838 bytes in 72 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 300/300] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 09:34:17 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 301/301] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 09:34:17 2020] POST /sign-language/cnn_5_150_150 => generated 830 bytes in 68 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 302/302] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 09:34:20 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 303/303] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 09:34:20 2020] POST /sign-language/cnn_5_150_150 => generated 836 bytes in 58 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 304/304] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 09:34:22 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 305/305] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 09:34:23 2020] POST /sign-language/cnn_5_150_150 => generated 836 bytes in 68 msecs (HTTP/1.1 200) 4 headers in 138 bytes (7 switches on core 0)
+[pid: 375094|app: 0|req: 306/306] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 09:34:25 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 307/307] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 09:34:25 2020] POST /sign-language/cnn_5_150_150 => generated 833 bytes in 61 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 308/308] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 09:34:28 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 309/309] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 09:34:28 2020] POST /sign-language/cnn_5_150_150 => generated 833 bytes in 62 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 310/310] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 09:34:31 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 311/311] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 09:34:31 2020] POST /sign-language/cnn_5_150_150 => generated 834 bytes in 66 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 312/312] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 09:34:33 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 313/313] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 09:34:34 2020] POST /sign-language/cnn_5_150_150 => generated 827 bytes in 54 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 314/314] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 09:41:58 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 315/315] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 09:41:58 2020] POST /sign-language/cnn_5_150_150 => generated 826 bytes in 65 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 316/316] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 09:42:01 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 317/317] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 09:42:01 2020] POST /sign-language/cnn_5_150_150 => generated 836 bytes in 64 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 318/318] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 09:42:03 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 319/319] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 09:42:03 2020] POST /sign-language/cnn_5_150_150 => generated 828 bytes in 67 msecs (HTTP/1.1 200) 4 headers in 138 bytes (3 switches on core 0)
+[pid: 375094|app: 0|req: 320/320] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 09:42:05 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 321/321] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 09:42:05 2020] POST /sign-language/cnn_5_150_150 => generated 832 bytes in 65 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 322/322] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 09:42:07 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 323/323] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 09:42:08 2020] POST /sign-language/cnn_5_150_150 => generated 831 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 324/324] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 09:42:34 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 325/325] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 09:42:34 2020] POST /sign-language/cnn_5_150_150 => generated 831 bytes in 68 msecs (HTTP/1.1 200) 4 headers in 138 bytes (7 switches on core 0)
+[pid: 375094|app: 0|req: 326/326] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 09:42:39 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 327/327] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 09:42:39 2020] POST /sign-language/cnn_5_150_150 => generated 825 bytes in 60 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 328/328] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 09:42:44 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 329/329] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 09:42:44 2020] POST /sign-language/cnn_5_150_150 => generated 830 bytes in 62 msecs (HTTP/1.1 200) 4 headers in 138 bytes (6 switches on core 0)
+[pid: 375094|app: 0|req: 330/330] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 09:42:49 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 331/331] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 09:42:49 2020] POST /sign-language/cnn_5_150_150 => generated 828 bytes in 57 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 332/332] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 09:42:53 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 333/333] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 09:42:53 2020] POST /sign-language/cnn_5_150_150 => generated 829 bytes in 62 msecs (HTTP/1.1 200) 4 headers in 138 bytes (6 switches on core 0)
+[pid: 375094|app: 0|req: 334/334] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 14:40:58 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 335/335] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 14:40:58 2020] POST /sign-language/cnn_5_150_150 => generated 833 bytes in 76 msecs (HTTP/1.1 200) 4 headers in 138 bytes (3 switches on core 0)
+[pid: 375094|app: 0|req: 336/336] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 14:40:59 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 337/337] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 14:41:00 2020] POST /sign-language/cnn_5_150_150 => generated 830 bytes in 60 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 338/338] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 14:49:17 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 339/339] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 14:49:17 2020] POST /sign-language/cnn_5_150_150 => generated 829 bytes in 60 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 375094|app: 0|req: 340/340] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 14:49:18 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 375094|app: 0|req: 341/341] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 14:49:19 2020] POST /sign-language/cnn_5_150_150 => generated 828 bytes in 56 msecs (HTTP/1.1 200) 4 headers in 138 bytes (5 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+!!! uWSGI process 375094 got Segmentation Fault !!!
+free(): corrupted unsorted chunks
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket sign_language.sock removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jun 22 14:52:21 2020] ***
+compiled with version: 9.3.0 on 09 April 2020 09:11:51
+os: Linux-5.4.0-4-amd64 #1 SMP Debian 5.4.19-1 (2020-02-13)
+nodename: jupiter
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 80
+current working directory: /home/sebastian/SignLanguageBackend/SignLanguageBackend
+detected binary path: /home/sebastian/.pyenv/versions/3.7.6/envs/tensorflow_two/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 767404
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address sign_language.sock fd 3
+Python version: 3.7.6 (default, Apr  9 2020, 11:02:14)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/sebastian/.pyenv/versions/tensorflow_two
+Set PythonHome to /home/sebastian/.pyenv/versions/tensorflow_two
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x562074caa150
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 390754)
+spawned uWSGI worker 1 (pid: 390768, cores: 1)
+2020-06-22 14:52:22.033820: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+Loading Model: models/150x150_4_Layer_CNN.hdf5
+2020-06-22 14:52:22.825335: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2020-06-22 14:52:22.828667: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:5e:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-06-22 14:52:22.828701: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-06-22 14:52:22.829996: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-06-22 14:52:22.831293: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2020-06-22 14:52:22.831497: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2020-06-22 14:52:22.832835: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2020-06-22 14:52:22.833600: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2020-06-22 14:52:22.836707: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-06-22 14:52:22.837953: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2020-06-22 14:52:22.838167: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-06-22 14:52:22.883606: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2100000000 Hz
+2020-06-22 14:52:22.898915: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x562078382f10 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-06-22 14:52:22.898976: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-06-22 14:52:23.208207: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5620783ef250 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-06-22 14:52:23.208277: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2020-06-22 14:52:23.211253: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:5e:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-06-22 14:52:23.211322: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-06-22 14:52:23.211364: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-06-22 14:52:23.211394: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2020-06-22 14:52:23.211423: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2020-06-22 14:52:23.211452: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2020-06-22 14:52:23.211480: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2020-06-22 14:52:23.211510: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-06-22 14:52:23.216572: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2020-06-22 14:52:23.216615: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-06-22 14:52:23.655978: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-06-22 14:52:23.656032: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2020-06-22 14:52:23.656038: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2020-06-22 14:52:23.657356: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2020-06-22 14:52:23.657387: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 13872 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:5e:00.0, compute capability: 7.5)
+Loading Model: models/150x150_5_Layer_CNN.hdf5
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x562074caa150 pid: 390768 (default app)
+2020-06-22 14:52:27.959563: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-06-22 14:52:28.164367: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-06-22 14:52:29.120954: W tensorflow/stream_executor/gpu/asm_compiler.cc:81] Running ptxas --version returned 256
+2020-06-22 14:52:29.161610: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+[pid: 390768|app: 0|req: 1/1] 94.114.65.237 () {42 vars in 606 bytes} [Mon Jun 22 14:52:27 2020] POST /sign-language/cnn_5_150_150 => generated 850 bytes in 4825 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
+[pid: 390768|app: 0|req: 2/2] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 14:54:12 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 2 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 390768|app: 0|req: 3/3] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 14:54:12 2020] POST /sign-language/cnn_5_150_150 => generated 861 bytes in 70 msecs (HTTP/1.1 200) 4 headers in 138 bytes (2 switches on core 0)
+[pid: 390768|app: 0|req: 4/4] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 14:54:14 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 390768|app: 0|req: 5/5] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 14:54:14 2020] POST /sign-language/cnn_5_150_150 => generated 850 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 138 bytes (7 switches on core 0)
+[pid: 390768|app: 0|req: 6/6] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 14:54:16 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 390768|app: 0|req: 7/7] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 14:54:16 2020] POST /sign-language/cnn_5_150_150 => generated 836 bytes in 56 msecs (HTTP/1.1 200) 4 headers in 138 bytes (8 switches on core 0)
+[pid: 390768|app: 0|req: 8/8] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 14:54:17 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 390768|app: 0|req: 9/9] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 14:54:18 2020] POST /sign-language/cnn_5_150_150 => generated 837 bytes in 56 msecs (HTTP/1.1 200) 4 headers in 138 bytes (10 switches on core 0)
+[pid: 390768|app: 0|req: 10/10] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 14:54:19 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 390768|app: 0|req: 11/11] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 14:54:19 2020] POST /sign-language/cnn_5_150_150 => generated 853 bytes in 58 msecs (HTTP/1.1 200) 4 headers in 138 bytes (5 switches on core 0)
+[pid: 390768|app: 0|req: 12/12] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 14:54:21 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 390768|app: 0|req: 13/13] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 14:54:21 2020] POST /sign-language/cnn_5_150_150 => generated 837 bytes in 57 msecs (HTTP/1.1 200) 4 headers in 138 bytes (6 switches on core 0)
+[pid: 390768|app: 0|req: 14/14] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 14:54:23 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 390768|app: 0|req: 15/15] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 14:54:23 2020] POST /sign-language/cnn_5_150_150 => generated 831 bytes in 53 msecs (HTTP/1.1 200) 4 headers in 138 bytes (7 switches on core 0)
+[pid: 390768|app: 0|req: 16/16] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 14:54:24 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 390768|app: 0|req: 17/17] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 14:54:25 2020] POST /sign-language/cnn_5_150_150 => generated 854 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 138 bytes (4 switches on core 0)
+[pid: 390768|app: 0|req: 18/18] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 14:54:26 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 390768|app: 0|req: 19/19] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 14:54:26 2020] POST /sign-language/cnn_5_150_150 => generated 853 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 138 bytes (5 switches on core 0)
+[pid: 390768|app: 0|req: 20/20] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 14:54:28 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 390768|app: 0|req: 21/21] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 14:54:28 2020] POST /sign-language/cnn_5_150_150 => generated 858 bytes in 54 msecs (HTTP/1.1 200) 4 headers in 138 bytes (6 switches on core 0)
+[pid: 390768|app: 0|req: 22/22] 46.252.128.250 () {58 vars in 978 bytes} [Mon Jun 22 14:54:30 2020] OPTIONS /sign-language/cnn_5_150_150 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 390768|app: 0|req: 23/23] 46.252.128.250 () {60 vars in 1013 bytes} [Mon Jun 22 14:54:30 2020] POST /sign-language/cnn_5_150_150 => generated 851 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 138 bytes (6 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+!!! uWSGI process 390768 got Segmentation Fault !!!
+corrupted double-linked list
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket sign_language.sock removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jun 22 14:54:45 2020] ***
+compiled with version: 9.3.0 on 09 April 2020 09:11:51
+os: Linux-5.4.0-4-amd64 #1 SMP Debian 5.4.19-1 (2020-02-13)
+nodename: jupiter
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 80
+current working directory: /home/sebastian/SignLanguageBackend/SignLanguageBackend
+detected binary path: /home/sebastian/.pyenv/versions/3.7.6/envs/tensorflow_two/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 767404
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address sign_language.sock fd 3
+Python version: 3.7.6 (default, Apr  9 2020, 11:02:14)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/sebastian/.pyenv/versions/tensorflow_two
+Set PythonHome to /home/sebastian/.pyenv/versions/tensorflow_two
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x557048e6f150
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 391256)
+spawned uWSGI worker 1 (pid: 391270, cores: 1)
+2020-06-22 14:54:46.251124: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+Loading Model: models/150x150_4_Layer_CNN.hdf5
+2020-06-22 14:54:47.049382: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2020-06-22 14:54:47.052591: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:5e:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-06-22 14:54:47.052614: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-06-22 14:54:47.054085: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-06-22 14:54:47.055764: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2020-06-22 14:54:47.055971: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2020-06-22 14:54:47.057416: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2020-06-22 14:54:47.058215: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2020-06-22 14:54:47.061538: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-06-22 14:54:47.062751: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2020-06-22 14:54:47.062984: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-06-22 14:54:47.107597: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2100000000 Hz
+2020-06-22 14:54:47.123375: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55704c5482d0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-06-22 14:54:47.123439: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-06-22 14:54:47.425751: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55704c5b4610 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-06-22 14:54:47.425824: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla T4, Compute Capability 7.5
+2020-06-22 14:54:47.428866: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:5e:00.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.75GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-06-22 14:54:47.428939: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-06-22 14:54:47.428985: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-06-22 14:54:47.429015: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2020-06-22 14:54:47.429043: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2020-06-22 14:54:47.429101: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2020-06-22 14:54:47.429130: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2020-06-22 14:54:47.429159: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-06-22 14:54:47.434326: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2020-06-22 14:54:47.434393: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-06-22 14:54:47.872620: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-06-22 14:54:47.872659: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2020-06-22 14:54:47.872665: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2020-06-22 14:54:47.873979: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2020-06-22 14:54:47.874009: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 13872 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:5e:00.0, compute capability: 7.5)
+Loading Model: models/150x150_5_Layer_CNN.hdf5
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x557048e6f150 pid: 391270 (default app)
+2020-06-22 14:54:50.039160: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-06-22 14:54:50.245085: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-06-22 14:54:51.180996: W tensorflow/stream_executor/gpu/asm_compiler.cc:81] Running ptxas --version returned 256
+2020-06-22 14:54:51.224637: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+[pid: 391270|app: 0|req: 1/1] 94.114.65.237 () {42 vars in 606 bytes} [Mon Jun 22 14:54:49 2020] POST /sign-language/cnn_5_150_150 => generated 844 bytes in 5125 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)

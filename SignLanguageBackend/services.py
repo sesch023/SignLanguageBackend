@@ -33,12 +33,22 @@ class SignLanguageCNN(Resource):
 
             classes = self.model_config["CLASSES"]
             prediction_dict = {}
+            max_val = 0.0
+            max_key = None
 
             for class_prediction_index in range(len(prediction[0])):
                 if len(classes) > class_prediction_index:
-                    prediction_dict[classes[class_prediction_index]] = prediction[0][class_prediction_index]
+                    key = classes[class_prediction_index]
                 else:
-                    prediction_dict[class_prediction_index] = prediction[0][class_prediction_index]
+                    key = class_prediction_index
+
+                prediction_dict[key] = prediction[0][class_prediction_index]
+
+                if prediction_dict[key] > max_val:
+                    max_key = key
+                    max_val = prediction_dict[key]
+
+            prediction_dict["BEST_KEY"] = max_key
 
             return prediction_dict, 200
         except Exception:

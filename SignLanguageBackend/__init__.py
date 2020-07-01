@@ -1,10 +1,14 @@
+import os
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 from config import Config
 from tensorflow.keras.models import load_model
 import glob
-import os
 from flask import Flask
 from flask_cors import CORS
 from flask_restful import Api
+import tensorflow as tf
 
 os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
 app = Flask(__name__)
@@ -16,7 +20,8 @@ app.config["MODELS"] = {}
 
 for model in glob.glob(app.config["MODEL_FOLDER_PATH"] + "*.hdf5"):
     print("Loading Model: " + model)
-    model_loaded = load_model(model)
+    with tf.device('/cpu:0'):
+        model_loaded = load_model(model)
     app.config["MODELS"][os.path.basename(model)] = {
         "MODEL_NAME": os.path.basename(model),
         "MODEL": model_loaded,

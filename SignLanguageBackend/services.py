@@ -1,20 +1,22 @@
 from SignLanguageBackend import app
-from tensorflow.keras.preprocessing.image import img_to_array
-from werkzeug import datastructures
-import traceback
-from PIL import Image
-from flask_restful import Resource, reqparse
-from flask import request
 from SignLanguageBackend import api
-import base64
-from io import BytesIO
+from SignLanguageBackend.SignLanguageCNN import SignLanguageCNN
+from SignLanguageBackend.ModelInfo import ModelInfo
 
+model_urls = {
+    "150x150_5_Layer_CNN.hdf5": "/cnn_5_150_150",
+    "224x224_VGG19_CNN.hdf5": "/vgg19_224_224",
+    "224x224_VGG19_CNN_v2.hdf5": "/vgg19_224_224_v2"
+}
 
-class SignLanguageCNN(Resource):
-    def __init__(self, target_shape, model_config):
-        self.model_config = model_config
-        self.target_shape = target_shape
+api.add_resource(ModelInfo, "/model_info", endpoint="model_info", resource_class_kwargs={"model_urls": model_urls})
 
+<<<<<<< HEAD
+api.add_resource(SignLanguageCNN, model_urls["150x150_5_Layer_CNN.hdf5"], endpoint="cnn_5_150_150",
+                 resource_class_kwargs={"document_outputs": False,
+                                        "target_shape": (150, 150),
+                                        "model_config": app.config["MODELS"]["150x150_5_Layer_CNN.hdf5"]})
+=======
     def post(self):
         try:
             parser = reqparse.RequestParser()
@@ -49,13 +51,17 @@ class SignLanguageCNN(Resource):
                     max_val = prediction_dict[key]
 
             prediction_dict["BEST_KEY"] = max_key
+>>>>>>> afe3580eba8e757a7609abbc001cb697df19a943
 
-            return prediction_dict, 200
-        except Exception:
-            print(traceback.format_exc())
-            return "BAD REQUEST", 400
+api.add_resource(SignLanguageCNN, model_urls["224x224_VGG19_CNN.hdf5"], endpoint="vgg19_224_224",
+                 resource_class_kwargs={"document_outputs": False,
+                                        "to_grayscale": False,
+                                        "target_shape": (224, 224),
+                                        "model_config": app.config["MODELS"]["224x224_VGG19_CNN.hdf5"]})
 
+api.add_resource(SignLanguageCNN, model_urls["224x224_VGG19_CNN_v2.hdf5"], "/default", endpoint="vgg19_224_224_v2",
+                 resource_class_kwargs={"document_outputs": False,
+                                        "to_grayscale": False,
+                                        "target_shape": (224, 224),
+                                        "model_config": app.config["MODELS"]["224x224_VGG19_CNN_v2.hdf5"]})
 
-api.add_resource(SignLanguageCNN, "/cnn_5_150_150",
-                 resource_class_kwargs={"target_shape": (150, 150),
-                                        "model_config": app.config["MODELS"]["150x150_5_Layer_CNN.hdf5"]})

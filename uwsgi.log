@@ -14702,3 +14702,115 @@ WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x55a2cc8d2150 pid:
 [pid: 742288|app: 0|req: 5/5] 185.55.75.36 () {50 vars in 883 bytes} [Wed Jul  1 06:55:41 2020] GET /sign-language/ => generated 64 bytes in 2 msecs (HTTP/1.1 405) 4 headers in 141 bytes (1 switches on core 0)
 =======
 >>>>>>> afe3580eba8e757a7609abbc001cb697df19a943
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Jul  1 17:19:54 2020] ***
+compiled with version: 9.3.0 on 09 April 2020 09:11:51
+os: Linux-5.4.0-4-amd64 #1 SMP Debian 5.4.19-1 (2020-02-13)
+nodename: jupiter
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 80
+current working directory: /home/sebastian/SignLanguageBackend/SignLanguageBackend
+detected binary path: /home/sebastian/.pyenv/versions/3.7.6/envs/tensorflow_two/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 767404
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address sign_language.sock fd 3
+Python version: 3.7.6 (default, Apr  9 2020, 11:02:14)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/sebastian/.pyenv/versions/tensorflow_two
+Set PythonHome to /home/sebastian/.pyenv/versions/tensorflow_two
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55a2c3fdb150
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 760878)
+spawned uWSGI worker 1 (pid: 760896, cores: 1)
+2020-07-01 17:19:54.528046: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+Loading Model: models/150x150_4_Layer_CNN.hdf5
+2020-07-01 17:19:55.283139: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2020-07-01 17:19:55.285573: E tensorflow/stream_executor/cuda/cuda_driver.cc:314] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2020-07-01 17:19:55.285596: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: jupiter
+2020-07-01 17:19:55.285601: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: jupiter
+2020-07-01 17:19:55.285649: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 440.64.0
+2020-07-01 17:19:55.285665: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 440.64.0
+2020-07-01 17:19:55.285669: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 440.64.0
+2020-07-01 17:19:55.285875: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-07-01 17:19:55.327951: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2100000000 Hz
+2020-07-01 17:19:55.342935: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55a2c715b900 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-07-01 17:19:55.342997: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Loading Model: models/224x224_VGG19_CNN.hdf5
+Loading Model: models/224x224_VGG19_CNN_v2.hdf5
+Loading Model: models/150x150_5_Layer_CNN.hdf5
+Traceback (most recent call last):
+  File "./wsgi.py", line 1, in <module>
+    from SignLanguageBackend import app
+  File "./SignLanguageBackend/__init__.py", line 39, in <module>
+    from SignLanguageBackend import services
+  File "./SignLanguageBackend/services.py", line 14
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+--- no python application found, check your startup logs for errors ---
+[pid: 760896|app: -1|req: -1/1] 94.114.65.237 () {44 vars in 747 bytes} [Wed Jul  1 17:20:08 2020] GET /sign-language/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 760896|app: -1|req: -1/2] 94.114.65.237 () {44 vars in 761 bytes} [Wed Jul  1 17:20:11 2020] GET /sign-language/default => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+!!! uWSGI process 760896 got Segmentation Fault !!!
+malloc(): unsorted double linked list corrupted
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket sign_language.sock removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Jul  1 17:20:54 2020] ***
+compiled with version: 9.3.0 on 09 April 2020 09:11:51
+os: Linux-5.4.0-4-amd64 #1 SMP Debian 5.4.19-1 (2020-02-13)
+nodename: jupiter
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 80
+current working directory: /home/sebastian/SignLanguageBackend/SignLanguageBackend
+detected binary path: /home/sebastian/.pyenv/versions/3.7.6/envs/tensorflow_two/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 767404
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address sign_language.sock fd 3
+Python version: 3.7.6 (default, Apr  9 2020, 11:02:14)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/sebastian/.pyenv/versions/tensorflow_two
+Set PythonHome to /home/sebastian/.pyenv/versions/tensorflow_two
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x562c4fd9b150
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 761353)
+spawned uWSGI worker 1 (pid: 761369, cores: 1)
+2020-07-01 17:20:55.130751: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+Loading Model: models/150x150_4_Layer_CNN.hdf5
+2020-07-01 17:20:55.883680: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2020-07-01 17:20:55.886252: E tensorflow/stream_executor/cuda/cuda_driver.cc:314] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2020-07-01 17:20:55.886280: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: jupiter
+2020-07-01 17:20:55.886285: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: jupiter
+2020-07-01 17:20:55.886334: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 440.64.0
+2020-07-01 17:20:55.886351: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 440.64.0
+2020-07-01 17:20:55.886355: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 440.64.0
+2020-07-01 17:20:55.886588: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-07-01 17:20:55.923829: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2100000000 Hz
+2020-07-01 17:20:55.938523: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x562c5199f130 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-07-01 17:20:55.938561: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Loading Model: models/224x224_VGG19_CNN.hdf5
+Loading Model: models/224x224_VGG19_CNN_v2.hdf5
+Loading Model: models/150x150_5_Layer_CNN.hdf5
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x562c4fd9b150 pid: 761369 (default app)

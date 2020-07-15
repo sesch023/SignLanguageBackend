@@ -1,3 +1,4 @@
+uwsgi
 tf-nightly>=2.3.0.dev20200613
 keras>=2.3.1
 flask>=1.1.2

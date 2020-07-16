@@ -2967,3 +2967,100 @@ spawned uWSGI worker 1 (pid: 321163, cores: 1)
 [pid: 767426|app: 0|req: 1335/1335] 109.91.164.167 () {42 vars in 703 bytes} [Thu Jul 16 16:52:06 2020] GET /sign-language/model_info => generated 141 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
 [pid: 767426|app: 0|req: 1336/1336] 109.91.164.167 () {42 vars in 703 bytes} [Thu Jul 16 16:52:08 2020] GET /sign-language/model_info => generated 141 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
 [pid: 767426|app: 0|req: 1337/1337] 109.91.164.167 () {42 vars in 693 bytes} [Thu Jul 16 17:24:36 2020] GET /sign-language/model_info => generated 141 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+!!! uWSGI process 767426 got Segmentation Fault !!!
+*** backtrace of 767426 ***
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(uwsgi_backtrace+0x2a) [0x55cd9d8bed2a]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(uwsgi_segfault+0x23) [0x55cd9d8bf0e3]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3b7e0) [0x7f0e7628a7e0]
+/home/sebastian/.pyenv/versions/tensorflow_two/lib/python3.7/site-packages/tensorflow/python/_pywrap_tensorflow_internal.so(_ZN10tensorflow5eager12GradientTapeI7_objectSt8functionIFPS2_S4_RKSt6vectorIxSaIxEEEE12PyTapeTensorE11DeleteTraceEx+0x2e) [0x7f0db66a60de]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x14561e) [0x55cd9d92161e]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x15c255) [0x55cd9d938255]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x17d705) [0x55cd9d959705]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x15c255) [0x55cd9d938255]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x17d705) [0x55cd9d959705]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x17b5bf) [0x55cd9d9575bf]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x15c255) [0x55cd9d938255]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x17d705) [0x55cd9d959705]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x15c255) [0x55cd9d938255]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x17d705) [0x55cd9d959705]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x15c255) [0x55cd9d938255]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x17d705) [0x55cd9d959705]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x15c255) [0x55cd9d938255]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x17f779) [0x55cd9d95b779]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x23525c) [0x55cd9da1125c]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(_PyGC_CollectIfEnabled+0x6d) [0x55cd9da1208d]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x207c6d) [0x55cd9d9e3c6d]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(uwsgi_plugins_atexit+0x71) [0x55cd9d8bd1f1]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3de27) [0x7f0e7628ce27]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3dfda) [0x7f0e7628cfda]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x9a06f) [0x55cd9d87606f]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(end_me+0x25) [0x55cd9d8bbf05]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x14110) [0x7f0e76acb110]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(end_me+0) [0x55cd9d8bbee0]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x14110) [0x7f0e76acb110]
+/lib/x86_64-linux-gnu/libc.so.6(epoll_wait+0x56) [0x7f0e7634c616]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(event_queue_wait+0x25) [0x55cd9d8b28c5]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(wsgi_req_accept+0x10a) [0x55cd9d87398a]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(simple_loop_run+0xb6) [0x55cd9d8bae66]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(simple_loop+0x10) [0x55cd9d8bac80]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(uwsgi_ignition+0x284) [0x55cd9d8bf424]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(uwsgi_worker_run+0x25e) [0x55cd9d8c3a5e]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(uwsgi_run+0x434) [0x55cd9d8c3fb4]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(+0x8d64e) [0x55cd9d86964e]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xeb) [0x7f0e76275e0b]
+/home/sebastian/.pyenv/versions/tensorflow_two/bin/uwsgi(_start+0x2a) [0x55cd9d872eba]
+*** end of backtrace ***
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket sign_language.sock removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Jul 16 17:54:26 2020] ***
+compiled with version: 9.3.0 on 09 April 2020 09:11:51
+os: Linux-5.4.0-4-amd64 #1 SMP Debian 5.4.19-1 (2020-02-13)
+nodename: jupiter
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 80
+current working directory: /home/sebastian/SignLanguage/SignLanguageBackend
+detected binary path: /home/sebastian/.pyenv/versions/3.7.6/envs/tensorflow_two/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 767404
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address sign_language.sock fd 3
+Python version: 3.7.6 (default, Apr  9 2020, 11:02:14)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/sebastian/.pyenv/versions/tensorflow_two
+Set PythonHome to /home/sebastian/.pyenv/versions/tensorflow_two
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5643db1a5150
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1112176)
+spawned uWSGI worker 1 (pid: 1112192, cores: 1)
+2020-07-16 17:54:26.851698: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+Loading Model: models/150x150_4_Layer_CNN.hdf5
+2020-07-16 17:54:27.621374: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2020-07-16 17:54:27.623983: E tensorflow/stream_executor/cuda/cuda_driver.cc:314] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2020-07-16 17:54:27.624012: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: jupiter
+2020-07-16 17:54:27.624019: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: jupiter
+2020-07-16 17:54:27.624078: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 440.64.0
+2020-07-16 17:54:27.624098: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 440.64.0
+2020-07-16 17:54:27.624104: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 440.64.0
+2020-07-16 17:54:27.624369: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-07-16 17:54:27.659968: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2100000000 Hz
+2020-07-16 17:54:27.674573: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5643dcda32d0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-07-16 17:54:27.674623: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Loading Model: models/224x224_VGG19_CNN.hdf5
+Loading Model: models/CNN_Kaggle2.hdf5
+Loading Model: models/VGG19_Kaggle2.hdf5
+Loading Model: models/224x224_VGG19_CNN_v2.hdf5
+Loading Model: models/150x150_5_Layer_CNN.hdf5
+WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x5643db1a5150 pid: 1112192 (default app)
+[pid: 1112192|app: 0|req: 1/1] 109.91.164.167 () {42 vars in 703 bytes} [Thu Jul 16 17:54:37 2020] GET /sign-language/model_info => generated 225 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
+[pid: 1112192|app: 0|req: 2/2] 109.91.164.167 () {42 vars in 703 bytes} [Thu Jul 16 17:55:17 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)

@@ -3067,3 +3067,70 @@ WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x5643db1a5150 pid:
 [pid: 1112192|app: 0|req: 3/3] 109.91.164.167 () {42 vars in 703 bytes} [Thu Jul 16 18:54:45 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
 [pid: 1112192|app: 0|req: 4/4] 109.91.164.167 () {42 vars in 703 bytes} [Fri Jul 17 16:41:04 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
 [pid: 1112192|app: 0|req: 5/5] 109.91.164.167 () {42 vars in 703 bytes} [Fri Jul 17 16:47:51 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+corrupted double-linked list
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+unlink(): No such file or directory [core/uwsgi.c line 1660]
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Jul 18 13:07:57 2020] ***
+compiled with version: 9.3.0 on 09 April 2020 09:11:51
+os: Linux-5.4.0-4-amd64 #1 SMP Debian 5.4.19-1 (2020-02-13)
+nodename: jupiter
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 80
+current working directory: /home/sebastian/SignLanguage/SignLanguageBackend
+detected binary path: /home/sebastian/.pyenv/versions/3.7.6/envs/tensorflow_two/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 767404
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address sign_language.sock fd 3
+Python version: 3.7.6 (default, Apr  9 2020, 11:02:14)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/sebastian/.pyenv/versions/tensorflow_two
+Set PythonHome to /home/sebastian/.pyenv/versions/tensorflow_two
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55fa75d7c150
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1145752)
+spawned uWSGI worker 1 (pid: 1145769, cores: 1)
+2020-07-18 13:07:58.181044: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+Loading Model: models/150x150_4_Layer_CNN.hdf5
+2020-07-18 13:07:58.956253: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2020-07-18 13:07:58.958853: E tensorflow/stream_executor/cuda/cuda_driver.cc:314] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2020-07-18 13:07:58.958877: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: jupiter
+2020-07-18 13:07:58.958883: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: jupiter
+2020-07-18 13:07:58.958932: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 440.64.0
+2020-07-18 13:07:58.958949: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 440.64.0
+2020-07-18 13:07:58.958954: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 440.64.0
+2020-07-18 13:07:58.959192: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-07-18 13:07:59.003954: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2100000000 Hz
+2020-07-18 13:07:59.019255: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55fa78efc6a0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-07-18 13:07:59.019352: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Loading Model: models/224x224_VGG19_CNN.hdf5
+Loading Model: models/CNN_Kaggle2.hdf5
+Loading Model: models/VGG19_Kaggle2.hdf5
+Loading Model: models/224x224_VGG19_CNN_v2.hdf5
+Loading Model: models/150x150_5_Layer_CNN.hdf5
+WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x55fa75d7c150 pid: 1145769 (default app)
+[pid: 1145769|app: 0|req: 1/1] 109.91.164.167 () {42 vars in 703 bytes} [Sat Jul 18 13:08:03 2020] GET /sign-language/model_info => generated 225 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
+[pid: 1145769|app: 0|req: 2/2] 109.91.164.167 () {46 vars in 737 bytes} [Sat Jul 18 13:08:13 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
+[pid: 1145769|app: 0|req: 3/3] 109.91.164.167 () {42 vars in 703 bytes} [Sat Jul 18 13:16:39 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
+[pid: 1145769|app: 0|req: 4/4] 109.91.164.167 () {44 vars in 716 bytes} [Sat Jul 18 13:16:49 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
+[pid: 1145769|app: 0|req: 5/5] 109.91.164.167 () {44 vars in 716 bytes} [Sat Jul 18 13:17:03 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
+[pid: 1145769|app: 0|req: 6/6] 109.91.164.167 () {44 vars in 716 bytes} [Sat Jul 18 13:17:20 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
+[pid: 1145769|app: 0|req: 7/7] 185.55.75.39 () {52 vars in 881 bytes} [Sat Jul 18 13:18:22 2020] GET /sign-language/model_info => generated 225 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 1145769|app: 0|req: 8/8] 185.55.75.39 () {52 vars in 881 bytes} [Sat Jul 18 13:18:29 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 1145769|app: 0|req: 9/9] 185.55.75.39 () {56 vars in 934 bytes} [Sat Jul 18 13:18:48 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 1145769|app: 0|req: 10/10] 109.91.164.167 () {44 vars in 716 bytes} [Sat Jul 18 13:19:05 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
+[pid: 1145769|app: 0|req: 11/11] 185.55.75.39 () {56 vars in 934 bytes} [Sat Jul 18 13:19:37 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 1145769|app: 0|req: 12/12] 185.55.75.39 () {56 vars in 934 bytes} [Sat Jul 18 13:20:21 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 1145769|app: 0|req: 13/13] 109.91.164.167 () {42 vars in 703 bytes} [Sat Jul 18 13:23:30 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
+[pid: 1145769|app: 0|req: 14/14] 109.91.164.167 () {42 vars in 703 bytes} [Sat Jul 18 13:23:34 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)

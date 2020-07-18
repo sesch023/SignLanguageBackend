@@ -10,7 +10,7 @@ Um möglichen Inkompatibilitäten aus dem Weg zu gehen, werden diese als Betrieb
 empohlen.
 1. Installation von essentiellen Paketen mit: apt-get install build-essential python
 2. Installation von Conda oder einem anderen Python Umgebungsmanager.
-3. Falls Conda genutzt wird, Installation von uwsgi über folgendee Befehle: 
+3. Falls Conda genutzt wird, Installation von uwsgi über folgende Befehle: 
     - conda config --add channels conda-forge
     - conda install uwsgi 
 4. Erstellen einer neuen Python 3.8 Umgebung.

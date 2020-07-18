@@ -10,11 +10,14 @@ Um möglichen Inkompatibilitäten aus dem Weg zu gehen, werden diese als Betrieb
 empohlen.
 1. Installation von essentiellen Paketen mit: apt-get install build-essential python
 2. Installation von Conda oder einem anderen Python Umgebungsmanager.
-3. Erstellen einer neuen Python 3.8 Umgebung.
-4. Installation der Anforderungen aus der requirements.txt mit PIP.
-5. Anpassen des virtualenv Parameters in der sign_language.ini. Wird uwsgi direkt aus der Python Umgebung
+3. Falls Conda genutzt wird, Installation von uwsgi über folgendee Befehle: 
+    - conda config --add channels conda-forge
+    - conda install uwsgi 
+4. Erstellen einer neuen Python 3.8 Umgebung.
+5. Installation der Anforderungen aus der requirements.txt mit PIP.
+6. Anpassen des virtualenv Parameters in der sign_language.ini. Wird uwsgi direkt aus der Python Umgebung
    gestartet, so kann diese auskommentiert oder entfernt werden.
-6. Starten des UWSGI-Servers aus dem Hauptverzeichnis der Anwendung mit: uwsgi --ini sign_language.ini
+7. Starten des UWSGI-Servers aus dem Hauptverzeichnis der Anwendung mit: uwsgi --ini sign_language.ini
 
 Aus diesem Befehl resultiert eine sign_language.sock Datei, auf welche beispielsweise mit NGINX Zugriff 
 gewährt werden kann. Wahlweise lässt sich die API auch unter https://jupiter.fh-swf.de/sign-language/ aufrufen, 

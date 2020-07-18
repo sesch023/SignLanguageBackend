@@ -3064,3 +3064,6 @@ Loading Model: models/150x150_5_Layer_CNN.hdf5
 WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x5643db1a5150 pid: 1112192 (default app)
 [pid: 1112192|app: 0|req: 1/1] 109.91.164.167 () {42 vars in 703 bytes} [Thu Jul 16 17:54:37 2020] GET /sign-language/model_info => generated 225 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
 [pid: 1112192|app: 0|req: 2/2] 109.91.164.167 () {42 vars in 703 bytes} [Thu Jul 16 17:55:17 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
+[pid: 1112192|app: 0|req: 3/3] 109.91.164.167 () {42 vars in 703 bytes} [Thu Jul 16 18:54:45 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
+[pid: 1112192|app: 0|req: 4/4] 109.91.164.167 () {42 vars in 703 bytes} [Fri Jul 17 16:41:04 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)
+[pid: 1112192|app: 0|req: 5/5] 109.91.164.167 () {42 vars in 703 bytes} [Fri Jul 17 16:47:51 2020] GET /sign-language/model_info => generated 225 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 104 bytes (1 switches on core 0)

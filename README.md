@@ -10,10 +10,10 @@ Um möglichen Inkompatibilitäten aus dem Weg zu gehen, werden diese als Betrieb
 empohlen.
 1. Installation von essentiellen Paketen mit: apt-get install build-essential python
 2. Installation von Conda oder einem anderen Python Umgebungsmanager.
-3. Falls Conda genutzt wird, Installation von uwsgi über folgende Befehle: 
+3. Erstellen und aktivieren einer neuen Python 3.8 Umgebung.
+4. Falls Conda genutzt wird, Installation von uwsgi über folgende Befehle: 
     - conda config --add channels conda-forge
     - conda install uwsgi 
-4. Erstellen einer neuen Python 3.8 Umgebung.
 5. Installation der Anforderungen aus der requirements.txt mit PIP.
 6. Anpassen des virtualenv Parameters in der sign_language.ini. Wird uwsgi direkt aus der Python Umgebung
    gestartet, so kann diese auskommentiert oder entfernt werden.

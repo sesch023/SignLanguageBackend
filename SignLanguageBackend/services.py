@@ -29,7 +29,7 @@ api.add_resource(SignLanguageCNN, model_urls["224x224_VGG19_CNN.hdf5"], endpoint
                                         "model_config": app.config["MODELS"]["224x224_VGG19_CNN.hdf5"]})
 
 # VGG19 mit Eingangsgröße 224x224 umtrainiert und mit VGG19_Preprozess der Bilder.
-api.add_resource(SignLanguageCNN, model_urls["224x224_VGG19_CNN_v2.hdf5"], endpoint="224x224_vgg19_v2",
+api.add_resource(SignLanguageCNN, model_urls["224x224_VGG19_CNN_v2.hdf5"], "/default", endpoint="224x224_vgg19_v2",
                  resource_class_kwargs={"document_outputs": False,
                                         "to_grayscale": False,
                                         "target_shape": (224, 224),
@@ -37,7 +37,7 @@ api.add_resource(SignLanguageCNN, model_urls["224x224_VGG19_CNN_v2.hdf5"], endpo
 
 # VGG19 mit Eingangsgröße 224x224 umtrainiert, mit VGG19_Preprozess der Bilder und
 # deaktivierten Basemodeltraining. Bekannt aus Ausarbeitung.
-api.add_resource(SignLanguageCNN, model_urls["VGG19_Kaggle2.hdf5"], "/default", endpoint="224x224_vgg19_v3",
+api.add_resource(SignLanguageCNN, model_urls["VGG19_Kaggle2.hdf5"], endpoint="224x224_vgg19_v3",
                  resource_class_kwargs={"document_outputs": False,
                                         "to_grayscale": False,
                                         "target_shape": (224, 224),
